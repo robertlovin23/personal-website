@@ -33,13 +33,18 @@ class ContactForm extends React.Component {
     render() {
         return(
             <div >
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} 
+                  name="contact"
+                  method="POST" 
+                  data-netlify="true" 
+                  data-netlify-honeypot="bot-field">
                 <div>
                     <label>Name</label>
                 </div>
                 <div>
                     <input type="text" 
-                           name="name" 
+                           name="name"
+                           placeholder="Your Name" 
                            value={this.state.name}
                            onChange={event => this.setState({name: event.target.value})} 
                            required>
@@ -51,6 +56,7 @@ class ContactForm extends React.Component {
             <div>
                     <input type="text" 
                            name="email" 
+                           placeholder="Your E-mail" 
                            value={this.state.email}
                            onChange={event => this.setState({email: event.target.value})}
                            required>
@@ -62,6 +68,7 @@ class ContactForm extends React.Component {
             <div>
                 <textarea type="text" 
                            name="message" 
+                           placeholder="Type your message" 
                            value={this.state.message}
                            onChange={event => this.setState({message: event.target.value})}
                            required>
@@ -71,6 +78,7 @@ class ContactForm extends React.Component {
                 <button type="submit">Submit</button>
             </div>
             <div>
+            <input type="hidden" name="form-name" value="contact" />
                 {this.state.mailSent &&
                     <div> Thank you for contacting us</div>
                 }
