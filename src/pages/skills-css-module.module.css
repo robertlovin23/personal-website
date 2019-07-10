@@ -1,0 +1,37 @@
+.skillImage{
+    margin: 0 auto;
+    display: block;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+}
+.skillDescription{
+    width: 100%;
+    padding-top:10px;
+
+}
+.skillList{
+    font-size: 1.3em;
+    text-shadow: .5px .5px #353535;
+}
+.skillName{
+    margin: 0 auto;
+    text-align: center;
+}
+.skillParagraph{
+    margin: 0 auto;
+    text-align: center;
+    padding-top:10px;
+    font-size: 1.3em;
+    text-shadow: .5px .5px #353535;
+}
+.skillTitle{
+    padding-top:25px;
+    text-align: center;
+}
+.colSpacing{
+    margin-right: 100px;
+    margin-top: 50px;
+    margin: 0 auto;
+    text-align:center;
+}

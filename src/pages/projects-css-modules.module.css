@@ -1,0 +1,28 @@
+.projectImage{
+    /* width:400px; */
+    height:300px;
+}
+.projectPicture{
+    float:left;
+}
+.projectSection{
+    float:right;
+    display:block;
+    width: 100%;
+    font-size: 1.05em;
+    padding-left:20px;
+}
+.projectLang{
+    font-size: 1.3em;
+}
+.projectBoxes{
+    display:block;
+    padding-bottom:50px;
+    border: 1px, black;
+}
+h2{
+    font-size: 1.6rem
+}
+.projectDescription{
+    margin-right:20px;
+}

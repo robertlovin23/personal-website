@@ -1,0 +1,136 @@
+.titleBox{
+    padding: 150px 50px 150px 50px;
+    text-align:center;
+    text-shadow: .5px .5px #353535;
+}
+#full-col{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.buttonBox{
+    padding: 30px 0px 30px 0px;
+}
+.titleName{
+    color: white;
+    text-transform: uppercase;
+}
+.linkList{
+    display:block;
+    float:right;
+    margin: 10px 10px 10px 10px;
+    color:white!important;
+}
+.linkSet{
+    margin-bottom: 0.5rem;
+    display:flex;
+}
+.linkDiv{
+    float:right;
+}
+.aboutContainer{
+    text-align:center;
+    margin: 0 auto;
+}
+.aboutText{
+    padding-top: 50px;
+}
+.descriptionText{
+    font-size: 1.3em;
+    padding:20px 0px 50px 0px;
+}
+.profilePic{
+    border-radius: 80%;
+
+}
+.skillTitle{
+    text-align:center;
+}
+.skillColumns{
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.projectSpace{
+    padding-top: 50px;
+}
+.projectTitle{
+    padding-top: 25px;
+    text-align:center;
+}
+.contactContainer{
+    padding: 100px 0px 100px 0px;
+}
+.btn-text{
+    font-size:20px;
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+    margin-bottom: 0rem;
+}
+footer{
+    /* height:100px; */
+    background-color: #343a40!important;
+}
+.footerName{
+    padding-top:40px;
+    padding-left:20px;
+}
+.footerRight{
+    float:right;
+}
+.socialLogo{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    float:right;
+    margin-right: 20px;
+    
+}
+.socialRow{
+    /* margin-right:50px; */
+    margin-top:25px;
+}
+.footerRow{
+    margin-right:0px!important;
+}
+.titleText{
+    color:white;
+}
+.contactJumbo{
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+}
+.formArea{
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+@media only screen and (max-width: 765px){
+    .footerName{
+        text-align:center;
+        padding-left:0px;
+    }
+    .socialRow{
+        text-align: center;
+        margin: 0 auto;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .socialLogo{
+        display: inline-block;
+        float:none;
+        margin-left: 20px;
+    }
+    .footerRow{
+        padding-right: 0em;
+    }
+}

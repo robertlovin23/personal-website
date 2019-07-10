@@ -1,0 +1,39 @@
+    
+.backgroundImage{
+    background-image: url("../components/images/alpsmnts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;   
+}
+.backgroundImage2{
+    background-image: url("../components/images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+.backgroundImage3{
+    background-image: url("../components/images/womancomputer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 100px 0px 100px 0px;
+    margin: 0 auto;
+}	
+.backgroundImage4{
+    background-image: url("../components/images/maroon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 100px 0px 100px 0px;
+    margin: 0 auto;
+}
+.backgroundImage, .backgroundImage2 ,.backgroundImage3, .backgroundImage4{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
