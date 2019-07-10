@@ -9,7 +9,7 @@ export default({children}) => {
     graphql`
         query{
             site{
-                metadata{
+                siteMetadata{
                     title
             }
         }
@@ -23,7 +23,7 @@ return(
                 <Col md={6} xs={12} className="footerLeft">
                 <Link to={'/'}>
                     <h4 className="titleName footerName">
-                        {data.site.metadata.title}
+                        {data.site.siteMetadata.title}
                     </h4> 
                 </Link>
                 </Col>
