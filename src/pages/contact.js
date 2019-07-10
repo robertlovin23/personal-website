@@ -6,7 +6,7 @@ import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const API_PATH = 'http://localhost:8000/src/api/contact/contact.php';
+// const API_PATH = 'http://localhost:8000/src/api/contact/contact.php';
 
 class ContactForm extends React.Component {
     constructor(props){
@@ -18,7 +18,7 @@ class ContactForm extends React.Component {
         }
     }
 
-    handleSubmit = event => {
+    /*handleSubmit = event => {
         event.preventDefault();
         console.log(this.state);
         axios({
@@ -29,7 +29,7 @@ class ContactForm extends React.Component {
         }).then(response => {
             console.log("Successful Message! ", response);
             })
-    };
+    };*/
     render() {
         return(
             <div >
