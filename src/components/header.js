@@ -9,7 +9,7 @@ export default ({children}) => {
     graphql`
         query{
             site{
-                siteMetadata{
+                metadata{
                     title
             }
         }
@@ -21,7 +21,7 @@ return(
     <Navbar collapseOnSelect expand="md" bg='dark' fixed='top'>
         <Navbar.Brand >
             <Link to={'/'}>
-                <h4 className="titleName">{data.site.siteMetadata.title}</h4>
+                <h4 className="titleName">{data.site.metadata.title}</h4>
             </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
