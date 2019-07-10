@@ -11,7 +11,6 @@ import project from'./projects-css-modules.module.css'
 import {Col, Jumbotron, Button, Row, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { rgba } from "style-value-types";
 
 console.log(styles)
 
