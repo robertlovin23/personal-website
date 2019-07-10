@@ -1,5 +1,5 @@
 module.exports = {
-    siteMetadata: {
+    metadata: {
         title:"Robert Lovin",
     },
     plugins: [
