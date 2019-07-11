@@ -8,6 +8,8 @@ import SkillStyles from '../components/skill-background.js'
 import ContactStyles from '../components/contact-image.js'
 import styles from './skills-css-module.module.css'
 import project from'./projects-css-modules.module.css'
+import Modal from 'react-modal'
+import ContactForm from '../components/contact.js'
 import {Col, Jumbotron, Button, Row, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -65,13 +67,7 @@ export default () =>
                     <h1 className="titleText">Hi! I'm Robert Lovin</h1>
                     <h3 className="titleText">I am a Web Developer, Problem Solver, and Adventurer</h3>
                 <div className = "buttonBox">
-                    <Button variant = "primary">
-                        <Link to={'/contact'}>
-                            <p className="btn-text">
-                            Inquiries
-                            </p>
-                        </Link>
-                    </Button>
+                    <ContactForm></ContactForm>
                 </div>
             </div>
         </BackgroundStyles>
@@ -176,13 +172,7 @@ export default () =>
             <ContactStyles className="contactJumbo" id="contact">
                 <Container className= "contactContainer">
                     <h2 className="titleText">Let's work on something together! Or catch up over Coffee!</h2>
-                    <Button variant="primary" >                       
-                            <Link to={'/contact'}>
-                                <p className="btn-text">
-                                    Inquiries 
-                                </p>                          
-                            </Link>                      
-                    </Button>
+                    <ContactForm></ContactForm>
                 </Container>
             </ContactStyles>
                 <Footer>

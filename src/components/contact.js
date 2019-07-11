@@ -1,23 +1,33 @@
 import React from 'react'
-import Header from '../components/header.js'
-import Footer from '../components/footer.js'
-import { Button } from 'react-bootstrap'
-import BackgroundStyles from '../components/background-image.js'
+import { Button, Col } from 'react-bootstrap'
+import Modal from 'react-modal'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const API_PATH = 'http://localhost:8000/src/api/contact/contact.php';
 
 class ContactForm extends React.Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
+
         this.state={
-            name: '',
-            email: '',
-            message: '',
+            modalIsOpen: false
         }
+
+        this.openModal = this.openModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
 
+    openModal(){
+        this.setState({
+            modalIsOpen: true
+        });
+    }
+    closeModal() {
+        this.setState({
+            modalIsOpen: false
+        });
+    }
     /*handleSubmit = event => {
         event.preventDefault();
         console.log(this.state);
@@ -32,21 +42,34 @@ class ContactForm extends React.Component {
     };*/
     render() {
         return(
-            <div >
-            <form /*style={{width:"800", paddingTop:"100px"}} onSubmit={this.handleSubmit}*/
-                  name="contact"
-                  method="POST" 
-                  data-netlify="true" 
-                  data-netlify-honeypot="bot-field">
+        <div>
+            <Button variant="primary" onClick={this.openModal}>                       
+                        <p className="btn-text">
+                            Inquiries 
+                        </p>                                             
+            </Button>
+            <div style={{textAlign: "center"}} >
+                <Modal
+                    className="modalClass" 
+                     isOpen ={this.state.modalIsOpen}
+                     onRequestClose={this.closeModal}
+                     contentLabel="Example Modal"
+                >
+                <div className="contact-title" style={{textAlign:"center"}}>
+                <h3>Contact Me!</h3>
+                </div>
+                <form /*style={{width:"800", paddingTop:"100px"}} onSubmit={this.handleSubmit}*/
+                     name="contact"
+                     method="POST" 
+                     data-netlify="true" 
+                     data-netlify-honeypot="bot-field">
                 <div>
                     <label>Name</label>
                 </div>
                 <div>
                     <input type="text" 
                            name="name"
-                           placeholder="Your Name" 
-                           value={this.state.name}
-                           onChange={event => this.setState({name: event.target.value})} 
+                           placeholder="Your name..." 
                            required>
                      </input>
                 </div>
@@ -57,8 +80,6 @@ class ContactForm extends React.Component {
                     <input type="text" 
                            name="email" 
                            placeholder="email@youremail.com" 
-                           value={this.state.email}
-                           onChange={event => this.setState({email: event.target.value})}
                            required>
                     </input>
             </div>
@@ -68,9 +89,7 @@ class ContactForm extends React.Component {
             <div>
                 <textarea type="text" 
                            name="message" 
-                           placeholder="Type your message" 
-                           value={this.state.message}
-                           onChange={event => this.setState({message: event.target.value})}
+                           placeholder="Type your message..." 
                            required>
                 </textarea>
             </div>
@@ -79,28 +98,15 @@ class ContactForm extends React.Component {
             </div>
             <div>
             <input type="hidden" name="form-name" value="contact" />
-                {this.state.mailSent &&
-                    <div> Thank you for contacting us</div>
-                }
             </div>
             </form>
-            </div>
+            </Modal>
+          </div>
+        </div>
+            
             );
         }
     }
 
 
-export default () => 
-    <Header>
-        <BackgroundStyles>
-            <div className="titleBox">
-                    <h1 className="titleText">Contact Me!</h1>
-                    <h3 className="titleText">Let's have a chat! Coffee's on me!</h3>
-            </div>
-        </BackgroundStyles>
-        <ContactForm>
-            
-        </ContactForm>
-        <Footer>
-        </Footer>
-    </Header>
+export default ContactForm;

@@ -103,12 +103,13 @@ footer{
     margin: 0 auto;
 }
 form{
-    width: 800px;
-    padding-top: 50px;
+    width: 700px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
-
+label{
+    color:white;
+}
 input[type=text],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -120,11 +121,47 @@ input[type=text],input[type=email], select, textarea {
     resize: vertical;
 }
 button[type=submit]{
-    margin: 10px;
+    margin: 20px 10px;
+    padding: 10px 20px;
     align-content:center;
 
 }
+.modalClass{
+    width: 80%;
+    border-radius: 10px;
+    background-color: #353535;
+    height: 500px;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-title{
+    padding-top: 40px;
+}
+@media only screen and (max-width: 900px){
+    form{
+        width: 500px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    input[type=text],input[type=email], select, textarea {
+
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+}
 @media only screen and (max-width: 765px){
+    form{
+        width: 400px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
     .footerName{
         text-align:center;
         padding-left:0px;
@@ -142,5 +179,25 @@ button[type=submit]{
     }
     .footerRow{
         padding-right: 0em;
+    }
+}
+@media only screen and (max-width: 540px){
+    form{
+        width: 280px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .modalClass{
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .modalClass{
+        height: 450px;
+    }
+    form{
+        width: 270px;
+        margin: 0 auto;
+        padding-bottom: 50px;
     }
 }
