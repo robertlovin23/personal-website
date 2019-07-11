@@ -90,6 +90,7 @@ class ContactForm extends React.Component {
                 <textarea type="text" 
                            name="message" 
                            placeholder="Type your message..." 
+                           rows="3"
                            required>
                 </textarea>
             </div>

@@ -127,10 +127,10 @@ button[type=submit]{
 
 }
 .modalClass{
-    width: 80%;
+    width: 50%;
     border-radius: 10px;
     background-color: #353535;
-    height: 500px;  
+    height: 525px;  
     position: fixed;
     top: 50%;
     left: 50%;
@@ -139,14 +139,13 @@ button[type=submit]{
 .contact-title{
     padding-top: 40px;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1400px){
     form{
         width: 500px;
         margin: 0 auto;
         padding-bottom: 50px;
     }
     input[type=text],input[type=email], select, textarea {
-
         margin: 0 auto;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -155,10 +154,14 @@ button[type=submit]{
         margin-bottom: 16px;
         resize: vertical;
     }
+    .modalClass{
+        margin-top: 50px;
+        width: 70%;
+    }
 }
 @media only screen and (max-width: 765px){
     form{
-        width: 400px;
+        width: 350px;
         margin: 0 auto;
         padding-bottom: 50px;
     }
@@ -183,20 +186,21 @@ button[type=submit]{
 }
 @media only screen and (max-width: 540px){
     form{
-        width: 280px;
+        width: 270px;
         margin: 0 auto;
         padding-bottom: 50px;
     }
     .modalClass{
-        height: 500px;
+        height: 520px;
     }
 }
 @media only screen and (max-width: 480px){
     .modalClass{
         height: 450px;
+        width: 75%;
     }
     form{
-        width: 270px;
+        width: 250px;
         margin: 0 auto;
         padding-bottom: 50px;
     }
