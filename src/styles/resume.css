@@ -107,7 +107,7 @@ form{
     margin: 0 auto;
     padding-bottom: 50px;
 }
-label{
+label, .contact-title{
     color:white;
 }
 input[type=text],input[type=email], select, textarea {

@@ -55,8 +55,8 @@ class ContactForm extends React.Component {
                      onRequestClose={this.closeModal}
                      contentLabel="Example Modal"
                 >
-                <div className="contact-title" style={{textAlign:"center"}}>
-                <h3>Contact Me!</h3>
+                <div style={{textAlign:"center"}}>
+                    <h3 className="contact-title">Contact Me!</h3>
                 </div>
                 <form /*style={{width:"800", paddingTop:"100px"}} onSubmit={this.handleSubmit}*/
                      name="contact"
@@ -73,10 +73,10 @@ class ContactForm extends React.Component {
                            required>
                      </input>
                 </div>
-            <div>
-                <label>Email</label>
-            </div>
-            <div>
+                <div>
+                    <label>Email</label>
+                </div>
+                <div>
                     <input type="text" 
                            name="email" 
                            placeholder="email@youremail.com" 
