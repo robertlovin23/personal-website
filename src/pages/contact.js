@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../components/header.js'
 import Footer from '../components/footer.js'
-import axios from 'axios'
-// import BackgroundStyles from '../components/background-image.js'
+import { Button } from 'react-bootstrap'
+import BackgroundStyles from '../components/background-image.js'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,7 +33,7 @@ class ContactForm extends React.Component {
     render() {
         return(
             <div >
-            <form /*onSubmit={this.handleSubmit}*/
+            <form /*style={{width:"800", paddingTop:"100px"}} onSubmit={this.handleSubmit}*/
                   name="contact"
                   method="POST" 
                   data-netlify="true" 
@@ -56,7 +56,7 @@ class ContactForm extends React.Component {
             <div>
                     <input type="text" 
                            name="email" 
-                           placeholder="Your E-mail" 
+                           placeholder="email@youremail.com" 
                            value={this.state.email}
                            onChange={event => this.setState({email: event.target.value})}
                            required>
@@ -74,8 +74,8 @@ class ContactForm extends React.Component {
                            required>
                 </textarea>
             </div>
-            <div>
-                <button type="submit">Submit</button>
+            <div style={{textAlign: "center"}}>
+                <Button color="primary" type="submit">Submit</Button>
             </div>
             <div>
             <input type="hidden" name="form-name" value="contact" />
@@ -92,6 +92,12 @@ class ContactForm extends React.Component {
 
 export default () => 
     <Header>
+        <BackgroundStyles>
+            <div className="titleBox">
+                    <h1 className="titleText">Contact Me!</h1>
+                    <h3 className="titleText">Let's have a chat! Coffee's on me!</h3>
+            </div>
+        </BackgroundStyles>
         <ContactForm>
             
         </ContactForm>

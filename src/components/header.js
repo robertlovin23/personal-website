@@ -28,17 +28,17 @@ return(
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey="/home">
             {/* <ul className="linkSet"> */}
+            <Nav.Link href={"#home"} className="linkList">
+                Home{/* <li className = "linkList">About</li> */}
+            </Nav.Link>
             <Nav.Link href={"#about"} className="linkList">
-                About{/* <li className = "linkList">About</li> */}
-            </Nav.Link>
-            <Nav.Link href={"#skills"} className="linkList">
-                Skills{/* <li className = "linkList">Skills</li> */}
+                About{/* <li className = "linkList">Skills</li> */}
             </Nav.Link>        
-            <Nav.Link href={'#projects'} className="linkList">    
-                Projects{/* <li className = "linkList">Projects</li> */}
+            <Nav.Link href={'#skills'} className="linkList">    
+                Skills{/* <li className = "linkList">Projects</li> */}
             </Nav.Link>
-            <Nav.Link href={"#contact"} className="linkList">   
-                Contact{/* <li className = "linkList">Contact</li> */}
+            <Nav.Link href={"#projects"} className="linkList">   
+                Projects{/* <li className = "linkList">Contact</li> */}
             </Nav.Link>
             {/* </ul> */}
         </Nav>

@@ -101,9 +101,14 @@ footer{
 }
 .formArea{
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
+form{
+    width: 800px;
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
 input[type=text],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
@@ -113,6 +118,11 @@ input[type=text],input[type=email], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+button[type=submit]{
+    margin: 10px;
+    align-content:center;
+
 }
 @media only screen and (max-width: 765px){
     .footerName{
