@@ -52,6 +52,9 @@
 .projectSpace{
     padding-top: 50px;
 }
+.projectImage{
+    width: 300px;
+}
 .projectTitle{
     padding-top: 25px;
     text-align:center;

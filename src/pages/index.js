@@ -6,6 +6,11 @@ import Footer from '../components/footer.js'
 import BackgroundStyles from '../components/background-image.js'
 import SkillStyles from '../components/skill-background.js'
 import ContactStyles from '../components/contact-image.js'
+import SpaceX from '../../src/components/images/spacex.png'
+import Youtube from '../../src/components/images/youtube.png'
+import WilliamLovin from '../../src/components/images/Web_Logo.png'
+import Davincis from '../../src/components/images/davincis.png'
+import NatureWalk from '../../src/components/images/naturewalk.png'
 import styles from './skills-css-module.module.css'
 import project from'./projects-css-modules.module.css'
 import Modal from 'react-modal'
@@ -50,7 +55,7 @@ const Projects = props => (
             <div className={project.projectSection}>
                 <h2 className={project.projectTitle}>{props.projectTitle}</h2>
                 <p className={project.projectDescription}>{props.projectDescription}</p>
-                <h5>Languages I Used:</h5>
+                <h5>Stack:</h5>
                 <p className={project.projectLang}>{props.projectLang}</p>
             </div>   
         </Row>  
@@ -121,50 +126,49 @@ export default () =>
                     <h1 className="projectTitle">Project's I've Worked On</h1>
                     <Container className="projectSpace">
                         <Projects
-                            projectsImage ="http://williamlovin.com/images/Web_logo.png"
+                            projectsImage ={WilliamLovin}
                             projectTitle="William Lovin and Associates"
                             projectDescription="A website created for a law-firm. It utilizes Bootstrap and jQuery
                                                 to create interactive and visually appealing elements. More specifically 
                                                 I included a Google Maps API to track where the offices of the law-firm were located
                                                 and I incorporated AOS.js to create text animations. "
                             projectLang="HTML5, CSS3, JavaScript, Bootstrap"
+                            style={{height: '300px', width: '1000px!important'}}
                         />
                         <Projects
-                            projectsImage="https://karylskulinarykrusade.com/wp-content/uploads/2016/10/Tokyo-Pot-2.jpg"
-                            projectTitle="Tokyo Pot"
-                            projectDescription="A website for a Japanese Resaurant in Stillwater, Oklahoma.
-                                                It includes a JavaScript Carosuel, a JSON rendered menu,
-                                                and an instance of the Google Maps API. Also there is a AJAX
-                                                contact form that sends a POST request to a PHP file."
-                            projectLang="HTML5, CSS3, JavaScript, Bootstrap"
+                            projectsImage={Youtube}
+                            projectTitle="VuePlayer"
+                            projectDescription="A web application that re-creates that Youtube UI. I used the Youtube API to display a
+                                                list of videos depending on what a user queries. Then to display the current video I provided an index value
+                                                that changes depending on which video the user clicks on. Finally, to get a list of videos on start-up,
+                                                I provided the componentDidMount function with a query string value."
+                            projectLang="ReactJS, Material-UI, CSS3"
                         />
                         <Projects
-                            projectsImage="http://i66.tinypic.com/9zud7k.jpg"
+                            projectsImage={SpaceX}
                             projectTitle="InterGalactic Images"
-                            projectDescription="A Mobile Application written in ActionScript using Apache Flex
-                                                and the Adobe Air SDK. It includes an RSS Feed of NASA's pictures
-                                                of the day by using an HTTP request that checks whether the RSS feed is valid,
-                                                and then rendering the feed if it returned true."
-                            projectLang="Apache Flex, ActionScript, XML"
+                            projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX and it's data. Some of this data includes
+                                                a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
+                            projectLang="ReactJS, Semantic-UI, CSS3"
 
                         />
                         <Projects
-                            projectsImage="http://i63.tinypic.com/24v8z82.png"
-                            projectTitle="Web Portfolio"
-                            projectDescription="A website built with GatsbyJS using React-Bootstrap to format its tables.
-                                                I have developed modules and in-line componenets to be able to render resuable parts.
-                                                Overall, GatsbyJS makes it easy to write reusable compoenents so that you don't have to
-                                                copy and paste HTML."
-                            projectLang="HTML5, CSS3, ReactJS, GatsbyJS"
+                            projectsImage={NatureWalk}
+                            projectTitle="NatureWalk"
+                            projectDescription="A web application I built that combines the power of the Hiking Project API and Google's Geocoding API that enables
+                                                a user to search for hiking trails based on a provided location. When a trail is clicked on it provides a map of where the trail
+                                                is as well as some extra data, including the total elevation and trail conditions. There is also an option to tab between a list
+                                                view and a map view."
+                            projectLang="ReactJS, Semantic-UI, CSS3"
                         />
                         <Projects
-                            projectsImage="http://i67.tinypic.com/25tzwgx.png"
-                            projectTitle="Suggestion Box"
+                            projectsImage={Davincis}
+                            projectTitle="Davinci's Food"
                             projectDescription="An Web Application that uses a service to load a list of to-do items on a list view. From there,
                                                 users can add more items to the list view or delete them. Another capability users have is that
                                                 they can upvote and comment on items as well, giving the a social aspect to the application.
                                                 "
-                            projectLang="HTML5, CSS3, AngularJS"
+                            projectLang="HTML5, CSS3, JavaScript, MaterialDesign"
 
                         />
                     </Container>

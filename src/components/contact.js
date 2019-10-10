@@ -50,7 +50,7 @@ class ContactForm extends React.Component {
             </Button>
             <div style={{textAlign: "center"}} >
                 <Modal
-                    className="modalClass" 
+                     className="modalClass" 
                      isOpen ={this.state.modalIsOpen}
                      onRequestClose={this.closeModal}
                      contentLabel="Example Modal"
