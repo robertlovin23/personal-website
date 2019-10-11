@@ -99,26 +99,26 @@ export default () =>
                         <Skills id = "skillDesign"
                             skillName="Web Designer"
                             skillParagraph="I take user stories from clients who may not
-                            have an idea what their web-page should look like. From there
+                            have an idea of what their application should look and feel like. From there,
                             I translate these requirements into wireframes using InVision.
-                            From there, I translate these designs into webpages"
+                            Finally, I translate these designs into webpages"
                             skillList="InVision, Trello, Slack"
                         />  
                         <Skills id = "skillDesign"
                             skillName="Front-End Development"
                             skillParagraph="After compliing my user stories and wireframes
-                             together then the magic happens.I use HTML5, CSS3, and my JavaScript
-                             skills to make my designs come to life. I strive to make interactive web-pages
+                             together then the magic happens.I use HTML5, CSS3, and JavaScript
+                             to make my designs come to life. I strive to make interactive web-pages
                              while also stressing usability and accessiblity principles so that I can include
-                             users of all walks of life. I also use AngularJS and ReactJS to make Web Applications"
-                            skillList="HTML5, CSS3, SASS, JavaScript, AngularJS, ReactJS"
+                             users of all walks of life."
+                            skillList="HTML5, CSS3, SASS, JavaScript, jQuery, ReactJS, GatsbyJS"
                         /> 
                         <Skills id = "skillDesign"
                             skillName="Back-End Development"
-                            skillParagraph="I have built web, mobile applications, and RESTful web services
+                            skillParagraph="I have built web and mobile applications, along with RESTful web services
                             using Ruby on Rails and Java. I built a Twitter-replica complete with user-authentication
-                            and user profiles and a built mobile application using the Adobe Air and Android Studio SDK's."
-                            skillList="Ruby on Rails, Java, MySQL, GraphQL, PostgreSQL"
+                            and user profiles. I also have a background in developing mobile applications using the Adobe Air and Android Studio SDK's."
+                            skillList="Ruby on Rails, Java, MySQL, GraphQL"
                         />                     
                     </Row>
                 </Col>
