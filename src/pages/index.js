@@ -55,6 +55,8 @@ const Projects = props => (
             <div className={project.projectSection}>
                 <h2 className={project.projectTitle}>{props.projectTitle}</h2>
                 <p className={project.projectDescription}>{props.projectDescription}</p>
+                <h5>Project Link:</h5>
+                <p className={project.projectLang}>{props.projectLinl}</p>
                 <h5>Stack:</h5>
                 <p className={project.projectLang}>{props.projectLang}</p>
             </div>   
@@ -132,8 +134,8 @@ export default () =>
                                                 to create interactive and visually appealing elements. More specifically 
                                                 I included a Google Maps API to track where the offices of the law-firm were located
                                                 and I incorporated AOS.js to create text animations. "
+                            projectLink="http://www.accelerand.com"
                             projectLang="HTML5, CSS3, JavaScript, Bootstrap"
-                            style={{height: '300px', width: '1000px!important'}}
                         />
                         <Projects
                             projectsImage={Youtube}
@@ -142,6 +144,7 @@ export default () =>
                                                 list of videos depending on what a user queries. Then to display the current video I provided an index value
                                                 that changes depending on which video the user clicks on. Finally, to get a list of videos on start-up,
                                                 I provided the componentDidMount function with a query string value."
+                            projectLink="http://vueplayer.netlify.com"
                             projectLang="ReactJS, Material-UI, CSS3"
                         />
                         <Projects
@@ -149,6 +152,7 @@ export default () =>
                             projectTitle="InterGalactic Images"
                             projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX and it's data. Some of this data includes
                                                 a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
+                            projectLink="http://spacexwiki.netlify.com"
                             projectLang="ReactJS, Semantic-UI, CSS3"
 
                         />
@@ -159,16 +163,18 @@ export default () =>
                                                 a user to search for hiking trails based on a provided location. When a trail is clicked on it provides a map of where the trail
                                                 is as well as some extra data, including the total elevation and trail conditions. There is also an option to tab between a list
                                                 view and a map view."
+                            projectLink="http://naturewalk.netlify.com"
                             projectLang="ReactJS, Semantic-UI, CSS3"
                         />
                         <Projects
                             projectsImage={Davincis}
                             projectTitle="Davinci's Food"
-                            projectDescription="An Web Application that uses a service to load a list of to-do items on a list view. From there,
-                                                users can add more items to the list view or delete them. Another capability users have is that
-                                                they can upvote and comment on items as well, giving the a social aspect to the application.
+                            projectDescription="A web site I constructed for a restaurant in my college town. I utilized the Materialize library to enhance my CSS and to create a 
+                                                mobile-friendly interface. The site also includes a menu for customers to choose their dishes before coming to the restaurant,
+                                                and it also includes a contact form so that customers can send feedback to the owners.
                                                 "
-                            projectLang="HTML5, CSS3, JavaScript, MaterialDesign"
+                            pprojectLink="http://www.davincisfood.com"
+                            projectLang="HTML5, CSS3, JavaScript, Materialize, jQuery"
 
                         />
                     </Container>
