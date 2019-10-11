@@ -56,7 +56,7 @@ const Projects = props => (
                 <h2 className={project.projectTitle}>{props.projectTitle}</h2>
                 <p className={project.projectDescription}>{props.projectDescription}</p>
                 <h5>Project Link:</h5>
-                <p className={project.projectLang}>{props.projectLinl}</p>
+                <p className={project.projectLang}>{props.projectLink}</p>
                 <h5>Stack:</h5>
                 <p className={project.projectLang}>{props.projectLang}</p>
             </div>   
@@ -173,7 +173,7 @@ export default () =>
                                                 mobile-friendly interface. The site also includes a menu for customers to choose their dishes before coming to the restaurant,
                                                 and it also includes a contact form so that customers can send feedback to the owners.
                                                 "
-                            pprojectLink="http://www.davincisfood.com"
+                            projectLink="http://www.davincisfood.com"
                             projectLang="HTML5, CSS3, JavaScript, Materialize, jQuery"
 
                         />
