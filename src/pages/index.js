@@ -141,15 +141,15 @@ export default () =>
                             projectsImage={Youtube}
                             projectTitle="VuePlayer"
                             projectDescription="A web application that re-creates that Youtube UI. I used the Youtube API to display a
-                                                list of videos depending on what a user queries. Then to display the current video I provided an index value
-                                                that changes depending on which video the user clicks on. Finally, to get a list of videos on start-up,
+                                                list of videos that changes depending on what a user queries. Then to display the current video, I provided an index value
+                                                that changes when the user clicks on the desired video. Finally, to get a list of videos on start-up,
                                                 I provided the componentDidMount function with a query string value."
                             projectLink="http://vueplayer.netlify.com"
                             projectLang="ReactJS, Material-UI, CSS3"
                         />
                         <Projects
                             projectsImage={SpaceX}
-                            projectTitle="InterGalactic Images"
+                            projectTitle="SpaceX Data"
                             projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX and it's data. Some of this data includes
                                                 a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
                             projectLink="http://spacexwiki.netlify.com"
@@ -159,8 +159,8 @@ export default () =>
                         <Projects
                             projectsImage={NatureWalk}
                             projectTitle="NatureWalk"
-                            projectDescription="A web application I built that combines the power of the Hiking Project API and Google's Geocoding API that enables
-                                                a user to search for hiking trails based on a provided location. When a trail is clicked on it provides a map of where the trail
+                            projectDescription="A web application I built that combines the power of the Hiking Project API and Google's Geocoding API to create a hiking search engine. 
+                                                When a trail is clicked on it provides a map of where the trail
                                                 is as well as some extra data, including the total elevation and trail conditions. There is also an option to tab between a list
                                                 view and a map view."
                             projectLink="http://naturewalk.netlify.com"
