@@ -99,15 +99,15 @@ export default () =>
                         <Skills id = "skillDesign"
                             skillName="Web Designer"
                             skillParagraph="I take user stories from clients who may not
-                            have an idea of what their application should look and feel like. From there,
-                            I translate these requirements into wireframes using InVision.
-                            Finally, I translate these designs into webpages"
+                             have an idea of what their application should look and feel like. From there,
+                             I translate these requirements into wireframes using InVision.
+                             Finally, I translate these designs into webpages"
                             skillList="InVision, Trello, Slack"
                         />  
                         <Skills id = "skillDesign"
                             skillName="Front-End Development"
                             skillParagraph="After compliing my user stories and wireframes
-                             together then the magic happens.I use HTML5, CSS3, and JavaScript
+                             together then the magic happens. I use HTML5, CSS3, and JavaScript
                              to make my designs come to life. I strive to make interactive web-pages
                              while also stressing usability and accessiblity principles so that I can include
                              users of all walks of life."
@@ -116,8 +116,8 @@ export default () =>
                         <Skills id = "skillDesign"
                             skillName="Back-End Development"
                             skillParagraph="I have built web and mobile applications, along with RESTful web services
-                            using Ruby on Rails and Java. I built a Twitter-replica complete with user-authentication
-                            and user profiles. I also have a background in developing mobile applications using the Adobe Air and Android Studio SDK's."
+                             using Ruby on Rails and Java. I built a Twitter-replica complete with user-authentication
+                             and user profiles. I also have a background in developing mobile applications using the Adobe Air and Android Studio SDK's."
                             skillList="Ruby on Rails, Java, MySQL, GraphQL"
                         />                     
                     </Row>
@@ -131,9 +131,9 @@ export default () =>
                             projectsImage ={WilliamLovin}
                             projectTitle="William Lovin and Associates"
                             projectDescription="A website created for a law-firm. It utilizes Bootstrap and jQuery
-                                                to create interactive and visually appealing elements. More specifically 
-                                                I included a Google Maps API to track where the offices of the law-firm were located
-                                                and I incorporated AOS.js to create text animations. "
+                                                 to create interactive and visually appealing elements. More specifically 
+                                                 I included a Google Maps API to track where the offices of the law-firm were located
+                                                 and I incorporated AOS.js to create text animations. "
                             projectLink="http://www.accelerand.com"
                             projectLang="HTML5, CSS3, JavaScript, Bootstrap"
                         />
@@ -141,9 +141,9 @@ export default () =>
                             projectsImage={Youtube}
                             projectTitle="VuePlayer"
                             projectDescription="A web application that re-creates that Youtube UI. I used the Youtube API to display a
-                                                list of videos that changes depending on what a user queries. Then to display the current video, I provided an index value
-                                                that changes when the user clicks on the desired video. Finally, to get a list of videos on start-up,
-                                                I provided the componentDidMount function with a query string value."
+                                                 list of videos that changes depending on what a user queries. Then to display the current video, I provided an index value
+                                                 that changes when the user clicks on the desired video. Finally, to get a list of videos on start-up,
+                                                 I provided the componentDidMount function with a query string value."
                             projectLink="http://vueplayer.netlify.com"
                             projectLang="ReactJS, Material-UI, CSS3"
                         />
@@ -151,7 +151,7 @@ export default () =>
                             projectsImage={SpaceX}
                             projectTitle="SpaceX Data"
                             projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX and it's data. Some of this data includes
-                                                a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
+                                                 a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
                             projectLink="http://spacexwiki.netlify.com"
                             projectLang="ReactJS, Semantic-UI, CSS3"
 
@@ -160,9 +160,9 @@ export default () =>
                             projectsImage={NatureWalk}
                             projectTitle="NatureWalk"
                             projectDescription="A web application I built that combines the power of the Hiking Project API and Google's Geocoding API to create a hiking search engine. 
-                                                When a trail is clicked on it provides a map of where the trail
-                                                is as well as some extra data, including the total elevation and trail conditions. There is also an option to tab between a list
-                                                view and a map view."
+                                                 When a trail is clicked on it provides a map of where the trail
+                                                 is as well as some extra data, including the total elevation and trail conditions. There is also an option to tab between a list
+                                                 view and a map view."
                             projectLink="http://naturewalk.netlify.com"
                             projectLang="ReactJS, Semantic-UI, CSS3"
                         />
@@ -170,8 +170,8 @@ export default () =>
                             projectsImage={Davincis}
                             projectTitle="Davinci's Food"
                             projectDescription="A web site I constructed for a restaurant in my college town. I utilized the Materialize library to enhance my CSS and to create a 
-                                                mobile-friendly interface. The site also includes a menu for customers to choose their dishes before coming to the restaurant,
-                                                and it also includes a contact form so that customers can send feedback to the owners.
+                                                 mobile-friendly interface. The site also includes a menu for customers to choose their dishes before coming to the restaurant,
+                                                 and it also includes a contact form so that customers can send feedback to the owners.
                                                 "
                             projectLink="http://www.davincisfood.com"
                             projectLang="HTML5, CSS3, JavaScript, Materialize, jQuery"
