@@ -7,6 +7,7 @@ import BackgroundStyles from '../components/background-image.js'
 import SkillStyles from '../components/skill-background.js'
 import ContactStyles from '../components/contact-image.js'
 import SpaceX from '../../src/components/images/spacex.png'
+import TransitGo from '../../src/components/images/transitgo.png'
 import Youtube from '../../src/components/images/youtube.png'
 import WilliamLovin from '../../src/components/images/weblogo.png'
 import Davincis from '../../src/components/images/davincis.png'
@@ -46,7 +47,7 @@ const Skills = props => (
     </Col>
 )
 const Projects = props => (
-    <Col md={10} xs={12} className={project.projectBoxes}>
+    <Col md={10} xs={12} className={project.projectBoxes} href={props.projectLink}>
         <Box className="box">
         <Row>
             <div className={project.projectPicture}>
@@ -128,6 +129,17 @@ export default () =>
                     <h1 className="projectTitle">Project's I've Worked On</h1>
                     <Container className="projectSpace">
                         <Projects
+                            projectsImage ={TransitGo}
+                            projectTitle="TransitGO"
+                            projectDescription="Finds bus,train, and subway stations within 1500 meters of either your 
+                                                    current location or a searched location. You can scroll through a list of stations to find the one most convienent
+                                                    to your given location, and when you click on the station's descriptor card, it centers the map over that stations location.
+                                                    Planning to add more features like schedules for each station, or a way to visualize routes.
+                                                     "
+                            projectLink="http://transitgo.netlify.com"
+                            projectLang="React, Semantic-UI, CSS3, JSX"
+                        />
+                        <Projects
                             projectsImage ={WilliamLovin}
                             projectTitle="William Lovin and Associates"
                             projectDescription="A website created for a law-firm. It utilizes Bootstrap and jQuery
@@ -150,7 +162,7 @@ export default () =>
                         <Projects
                             projectsImage={SpaceX}
                             projectTitle="SpaceX Data"
-                            projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX and it's data. Some of this data includes
+                            projectDescription="I used the unofficial SpaceX API to come up with a list of important facts about SpaceX. Some of this data includes
                                                  a list of rockets, launch sites, when the next launch is, as well as providing a filterable list of every SpaceX Launch."
                             projectLink="http://spacexwiki.netlify.com"
                             projectLang="ReactJS, Semantic-UI, CSS3"
