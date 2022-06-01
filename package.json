@@ -39,7 +39,7 @@
     "react-typography": "^0.16.19",
     "save": "^2.4.0",
     "scrollmonitor-react": "^2.4.1",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "typography": "^0.16.19",
     "typography-theme-lawton": "^0.16.19"
   },
